@@ -1,0 +1,10 @@
+<app-add-to-do  (sendToDoToList) = 'addNewToDoList($event)'>
+
+</app-add-to-do>
+
+<app-to-do-items 
+    *ngFor = "let i of todos" 
+    [xyz] = 'i'
+    (deleteToDo) = 'deleteToDoInMainComponent($event)'>
+
+</app-to-do-items>
